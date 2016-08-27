@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  host: localhost
+  username: postgres
+  password: 123456
+  database: pomodoro
+
+test:
+  <<: *default
+  database: PomodoroRails_test
+
+production:
+  <<: *default
+  database: PomodoroRails_production
+  username: PomodoroRails
+  password: <%= ENV['POMODORORAILS_DATABASE_PASSWORD'] %>

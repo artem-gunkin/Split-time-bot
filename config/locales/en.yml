@@ -1,0 +1,122 @@
+en:
+  welcome: |
+    *Hi!*
+    I will help you to manage time and be more productive
+  choose_lang: 'Choose your language, please:'
+  write_me: 'Have questions? Write me @gunkin'
+  lang_ru: 'Русский'
+  lang_en: 'English'
+  tutorial: |
+    *Everything is simple here, but read carefully.*
+
+    You have three available standard timers: 5, 15 и 25 minutes. The timers can be changed in the settings. Use them for short-term tasks.
+
+    Also you can use Sprint - Pomodoro similarity. Again, the time of work, rest and the number of pieces you can change the settings.
+
+    *And why all this is necessary?*
+    This thing is for those who have all the time distracted from working and by the end of the day realize that nothing really did. This is not about you? Then you do not need this bot. And if you know yourself - read more.
+
+    *How to use?*
+    Run Sprint and work. After the end of the each interval, I will notify you and put the timer for relax. But you can ignore or completely forget about the task, it is necessary to fix. Therefore, it is necessary to leave a review (press the button) after each interval.
+
+    *What are the reviews?*
+    In the evening look Statistics. If you are too often distracted or completely forget about the problem, you need to reduce the time and to increase the rest. As soon as the statistics start to improve, increase work time. So you'll be more productive.
+    Now try ☝
+  timer: '%{min} min.'
+  work: 'Timer'
+  sprint: 'Sprint'
+  settings: 'Settings'
+  help: 'Help'
+  undefined: "I don't understand you."
+  work_time: |
+    *Task #%{id}*
+
+    Type: *%{type}*
+    Until the end less then *%{min_left} min.*
+    Total time: *%{min} min.*
+  work_finished: |
+    *Task #%{id}*
+
+    Type: *%{type}*
+    Total time: *%{min} min.*
+    Status: *Completed*
+    Leave a comment on how the work went.
+  stop: 'Stop'
+  task_stopped: |
+    *Task #%{id}*
+
+    Type: *%{type}*
+    Total time: *%{min} min.*
+    Status: *Stopped*
+  break_time: |
+    Here is a break, a rest.
+    Until the end of rest of less than *%{min_left} min*.
+    *Total rest time *% {min} min.*
+  relax_time: "Timer expired. Time to relax."
+  last_break_time: 'Sprint ended, take a rest.'
+  settting_changed: |
+    Changes saved.
+  change_timer_message: |
+    Enter the new values for the standard timers through the gap.
+
+    *For example: 5 10 15*
+
+    This example will set the time for the first timer - 5 minutes for the second - 10 min. and for the third 15 min.
+  task_finish: |
+    *Task #%{id}*
+
+    Type: *%{type}*
+    Total time: *%{min} мин.*
+    Status: *Completed*
+    Comment: *%{status}*
+  break_finished: |
+    Rest ended.
+    The total time of rest *%{min} min.*
+  menu: "Back"
+  timer_save: "Timer settings saved."
+  wrong_lang: "Wrong. Choose the language."
+  lang_saved: "The language is set."
+  break_info: "Break"
+  well: "Well"
+  digress: "Digress"
+  forgot: "Forgot about task"
+  go_work: "Go to work!"
+  lang: "Language"
+  standard_timer: "Standard timers"
+  welcome_settings: "You're in the settings. Choose what you want to change."
+  change_sprint_message: |
+    Enter the new values for the sprint through the gap.
+
+    *For example: 25 5 4*
+
+    This example will set the timer for the sprint - 25 min. time for rest - 5 minutes. and the number of sections - 4.
+  sprint_save: "Sprint settings saved."
+  sprint_stopped: "Sprint stopped."
+  invalid_options: "Incorrect data."
+  stats: "Statistic"
+  stats_info: |
+    *Statistic:*
+
+    *For today*
+    Number of successful task: %{today_count}
+    Opening hours: %{today_time} minutes.
+    *Reviews*
+    Well - %{today_well}
+    Digress - %{today_digress}
+    Forgot about the task - %{today_forgot}
+
+    *During the week*
+    Number of successful task: %{week_count}
+    Opening hours: %{week_time} minutes.
+    *Reviews*
+    Well - %{week_well}
+    Digress - %{week_digress}
+    Forgot about the task - %{week_forgot}
+
+    Stopped tasks or tasks that you forget - do not count.
+  time: "Time"
+  send_locaton: "Send your location to I spotted your time zone."
+  location: "Send location"
+  timezone_saved: "Time Zone settings updated."
+  send_locaton_again: |
+    Just click on the button below the input field.
